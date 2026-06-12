@@ -1,0 +1,13 @@
+app:
+  name: june12-app-qa
+
+replicaCount: 2
+
+image:
+  repository: 283904064946.dkr.ecr.us-east-1.amazonaws.com/june12-dev-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
