@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# AWS / secrets - NEVER PUSH
+.aws/
+*.pem
+*.key
+credentials
+config
+terraform.tfvars
+*.tfvars
+kubeconfig
+*.kubeconfig
+
+# Docker
+.docker/
+
+# Jenkins / local
+*.log

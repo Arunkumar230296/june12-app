@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: june12-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: june12-app
+  template:
+    metadata:
+      labels:
+        app: june12-app
+    spec:
+      containers:
+      - name: june12-app
+        image: 283904064946.dkr.ecr.us-east-1.amazonaws.com/june12-dev-app:latest
+        ports:
+        - containerPort: 5000
