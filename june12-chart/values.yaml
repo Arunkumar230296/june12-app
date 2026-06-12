@@ -1,7 +1,7 @@
 app:
   name: june12-app
 
-replicaCount: 2
+replicaCount: 3
 
 image:
   repository: 283904064946.dkr.ecr.us-east-1.amazonaws.com/june12-dev-app
